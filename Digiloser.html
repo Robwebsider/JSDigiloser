@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DIGILOSER</title>
+       
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section id="seleccionar-mascota">
+            <h1 class="titulo"> Digiloser</h1>
+
+            <h2 class="subtitulo">Elige tu digiloser:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="charizard"/>
+                <label class= "tarjeta-de-digiloser" for="charizard">
+                    <p>Charizard</p>
+                    <img src="./Images/charizard.png" alt="Charizard">    
+                </label><br>
+                
+                <input type="radio" name="mascota" id="squirtle"/>
+                <label class= "tarjeta-de-digiloser" for="squirtle">
+                    <p>Squirtle</p>
+                    <img src="./Images/Squirtle.png" alt="Squirtle">
+                </label><br>
+                
+                <input type="radio" name="mascota" id="bulbasaur"/>
+                <label class= "tarjeta-de-digiloser" for="bulbasaur">
+                    <p>Bulbasaur</p>
+                    <img src="./Images/Bulbasaur.png" alt="Bulbasaur">
+                </label><br>
+
+                <input type="radio" name="mascota" id="waterfire"/>               
+                <label class= "tarjeta-de-digiloser" for="waterfire">
+                    <p>Waterfire</p>
+                    <img src="./Images/waterfire.png" alt="Waterfire">
+                </label><br>
+                
+                <input type="radio" name="mascota" id="poshisand"/>
+                <label class= "tarjeta-de-digiloser" for="poshisand">
+                    <p>Poshisand</p>
+                    <img src="./Images/poshisand.jpg" alt="Poshisand">
+                </label><br>
+                
+                <input type="radio" name="mascota" id="medabot"/>
+                <label class= "tarjeta-de-digiloser" for="medabot">
+                    <p>Medabot</p>
+                    <img src="./Images/Medabots_Metabee2.png" alt="Medabot">
+                </label><br>
+                
+            </div>
+
+
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo"> DIGILOSER!</h1>
+
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+            
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-de-ataque1">Fuego 🔥🔥</button>   
+                <button id="boton-agua" class="boton-de-ataque2">Agua 💧💧</button>
+                <button id="boton-tierra" class="boton-de-ataque3">Tierra 🍃🍃</button>
+            </div>
+
+            <div id="mensajes">
+                    <p id="resultado">Que empieze el Juego!</p>
+
+                    <section id="boton-reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+
+            </div> 
+
+                <div class="ataques">
+                    <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                  </div>
+                  <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>         
+            </div>
+        </section>
+        <script src="./JS/digiloser.js"></script>   
+    </body>
+</html>
